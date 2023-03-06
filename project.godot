@@ -15,6 +15,7 @@ _global_script_class_icons={
 [application]
 
 config/name="Tugas Akhir"
+run/main_scene="res://battle_screen.tscn"
 config/icon="res://icon.png"
 
 [rendering]

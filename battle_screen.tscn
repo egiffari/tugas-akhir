@@ -1,10 +1,32 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://health_bar.tscn" type="PackedScene" id=1]
 [ext_resource path="res://question.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Blocks.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Assets/s4m_ur4i-bg_clouds.png" type="Texture" id=4]
+[ext_resource path="res://Assets/AlphakrylikDarkGreen.png" type="Texture" id=5]
+[ext_resource path="res://Assets/black line.png" type="Texture" id=6]
+[ext_resource path="res://battle_screen.gd" type="Script" id=7]
 
 [node name="battle_screen" type="Node2D"]
+script = ExtResource( 7 )
+
+[node name="Background" type="Node2D" parent="."]
+
+[node name="AlphakrylikDarkGreen" type="Sprite" parent="Background"]
+position = Vector2( 513.742, 337.939 )
+scale = Vector2( 2.34229, 1 )
+texture = ExtResource( 5 )
+
+[node name="S4mUr4i-bgClouds" type="Sprite" parent="Background"]
+position = Vector2( 517.09, -63.6735 )
+scale = Vector2( 2.95117, 2.03848 )
+texture = ExtResource( 4 )
+
+[node name="BlackLine" type="Sprite" parent="Background"]
+position = Vector2( 513.742, 294.285 )
+scale = Vector2( 1, 1.59509 )
+texture = ExtResource( 6 )
 
 [node name="player1" type="Node2D" parent="."]
 position = Vector2( 256, 0 )
